@@ -11,7 +11,7 @@
  
 ## Deliverable 1 : Linear Regression to Predict MPG
 
- - Used the library() function to load the dplyr and tidyverse packages
+Used the library() function to load the dplyr and tidyverse packages
 
 Code
 ```
@@ -22,18 +22,22 @@ library(tidyverse)
 
 Output :
 
+<img src="https://github.com/hsurisetti/MechaCar_Statistical_Analysis/blob/main/screenshots/1a.png" width=400 />
 
- - Import and read in MeachCar_mpg.csv as a dataframe
+Import and read in MeachCar_mpg.csv as a dataframe
  
 ```
 # 1.2 Import and read the csv file MechaCar_mpg.csv
-mecha_car <- read.csv(file="MechaCar_mpg.csv", check.names = F,stringsAsFactors = F)
+mecha_car <-
+ read.csv(file="MechaCar_mpg.csv", check.names = F,stringsAsFactors = F)
 head(mecha_car)
 ```
 
 Output :
 
-- Perform linear regression using the lm() function. 
+<img src="https://github.com/hsurisetti/MechaCar_Statistical_Analysis/blob/main/screenshots/1b.png" width=400 />
+
+Perform linear regression using the lm() function. 
 - The lm() function, is passed in 6 variables and add the dataframe created, as the data parameter.
 
 Code :
@@ -46,8 +50,10 @@ lm(mpg ~ vehicle_length + vehicle_weight + spoiler_angle + ground_clearance + AW
 
 Output :
 
+<img src="https://github.com/hsurisetti/MechaCar_Statistical_Analysis/blob/main/screenshots/1c.png" width=400 />
 
-- Using the summary() function, the p-value and the r-squared values are determined for the linear regression model.
+
+Using the summary() function, the p-value and the r-squared values are determined for the linear regression model.
 
 code :
 ```
@@ -58,69 +64,80 @@ summary(lm(mpg ~ vehicle_length + vehicle_weight + spoiler_angle + ground_cleara
 
 Output :
 
+<img src="https://github.com/hsurisetti/MechaCar_Statistical_Analysis/blob/main/screenshots/1d.png" width=400 />
+
 
 ## Linear regression to predict MPG
 
-- Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?
+1. Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?
 
- Using a multiple linear regression model, it could be determined that 
+     Using a multiple linear regression model, it could be determined that 
  
-  - the vehicle length and the ground clearance have a statistical significance on miles per gallon(mpg)
-  - Both vehicle length and ground clearnace had p-values below the significant level of 0.05%.
-  - Vehicle length has p-value equal to 2.60e-12
-  - Ground clearnce has p-value equal to 5.21e-08
+   - the vehicle length and the ground clearance have a statistical significance on miles per gallon(mpg)
+   - Both vehicle length and ground clearnace had p-values below the significant level of 0.05%.
+   - Vehicle length has p-value equal to 2.60e-12
+   - Ground clearnce has p-value equal to 5.21e-08
 
   
-- Is the slope of the linear model considered to be zero? Why or why not?
+2. Is the slope of the linear model considered to be zero? Why or why not?
 
-  Based on the outputs we see that , the multiple r-square value is 0.7149 
+    Based on the outputs we see that , the multiple r-square value is 0.7149 
   and the p-value is below the significance level of 0.05%, there is sufficient evidence to reject the null hypothesis which means that the slope of the linear model is not zero.
   
-- Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?
+3. Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?
  
-  The linear model is a good indicator to prove its effectiveness because
+   The linear model is a good indicator to prove its effectiveness because
   
-  - the multiple r-square value is 0.7149 and the p-value is 5.35e-11,
+     - the multiple r-square value is 0.7149 and the p-value is 5.35e-11,
   which is below the significance level of 0.05%. 
-  - the r-squared value shows that about 71% of the predictions will be correct using this linear model.
+     - the r-squared value shows that about 71% of the predictions will be correct using this linear model.
   
 
 ## Deliverable 2 
 
- - Import and read in Suspension_Coil.csv as a table
+Import and read in Suspension_Coil.csv as a table
  
 code :
 ```
 # 2.1 Import and read the csv file
-suspension_coil <- read.csv(file = "Suspension_Coil.csv", check.names = F, stringsAsFactors = F)
+suspension_coil <-
+read.csv(file = "Suspension_Coil.csv", check.names = F, stringsAsFactors = F)
 
 ```
 
 Output:
 
-- create a total_summary dataframe using the summarize() function to get the mean, median, variance, and standard deviation of the suspension coil’s PSI column.
+<img src="https://github.com/hsurisetti/MechaCar_Statistical_Analysis/blob/main/screenshots/2a.png" width=400 />
+
+Create a total_summary dataframe using the summarize() function to get the mean, median, variance, and standard deviation of the suspension coil’s PSI column.
 
 code:
 
 ```
 # 2.2 create total summary df using summarize()
-total_summary <- suspension_coil %>% summarize(Mean= mean(PSI),Median=median(PSI),Variance=var(PSI), SD=sd(PSI),.groups='keep')
+total_summary <- suspension_coil %>% 
+  summarize(Mean= mean(PSI),Median=median(PSI),Variance=var(PSI), SD=sd(PSI),.groups='keep')
 
 ```
 Output:
 
-- Write an RScript that creates a total_summary dataframe using the summarize() function to get the mean, median, variance, and standard deviation of the suspension coil’s PSI column.
+<img src="https://github.com/hsurisetti/MechaCar_Statistical_Analysis/blob/main/screenshots/2b.png" width=400 />
+
+Write an RScript that creates a total_summary dataframe using the summarize() function to get the mean, median, variance, and standard deviation of the suspension coil’s PSI column.
 
 code:
 
 ```
 # 2.3 Create lot summary df using group_by and summarize()
-lot_summary <- suspension_coil %>% group_by(Manufacturing_Lot) %>% summarize(Mean=mean(PSI),Median=median(PSI),Variance=var(PSI),SD=sd(PSI),.groups='keep')
+lot_summary <- suspension_coil %>% 
+  group_by(Manufacturing_Lot) %>%
+  summarize(Mean=mean(PSI),Median=median(PSI),Variance=var(PSI),SD=sd(PSI),.groups='keep')
 
 ```
 
 Output:
 
+<img src="https://github.com/hsurisetti/MechaCar_Statistical_Analysis/blob/main/screenshots/2c.png" width=400 />
 
 ## write a short summary using screenshots from your total_summary and lot_summary dataframes, and address the following question:
 
@@ -134,7 +151,9 @@ Does the current manufacturing data meet this design specification for all manuf
  - Lot 3 did not meet the design spcification and it exceeded the PSI limit.
  - Summary statistics show that Lot 3 had a PSI variance of 170.
  
+<img src="https://github.com/hsurisetti/MechaCar_Statistical_Analysis/blob/main/screenshots/2d.png" width=400 />
 
+<img src="https://github.com/hsurisetti/MechaCar_Statistical_Analysis/blob/main/screenshots/2e.png" width=400 />
 
 
 
@@ -152,7 +171,7 @@ t.test(suspension_coil$PSI, mu=1500)
 
 Output:
 
-
+<img src="https://github.com/hsurisetti/MechaCar_Statistical_Analysis/blob/main/screenshots/3a.png" width=400 />
 
 - Write three more RScripts in your MechaCarChallenge.RScript using the t.test() function and its subset() argument to determine if the PSI for each manufacturing lot is statistically different from the population mean of 1,500 pounds per square inch.
 
@@ -175,6 +194,11 @@ t.test(lot3$PSI, mu=1500)
 
 Output
 
+<img src="https://github.com/hsurisetti/MechaCar_Statistical_Analysis/blob/main/screenshots/3b.png" width=400 />
+
+<img src="https://github.com/hsurisetti/MechaCar_Statistical_Analysis/blob/main/screenshots/3c.png" width=400 />
+
+<img src="https://github.com/hsurisetti/MechaCar_Statistical_Analysis/blob/main/screenshots/3d.png" width=400 />
 
 ## T-Tests on Suspension Coils
  Here are the Interpretation and the findings of the t-test results

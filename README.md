@@ -13,7 +13,8 @@
 
 Used the library() function to load the dplyr and tidyverse packages
 
-Code
+Code :
+
 ```
  ## 1.1 Load the Packages
 library(dplyr)
@@ -22,10 +23,11 @@ library(tidyverse)
 
 Output :
 
-<img src="https://github.com/hsurisetti/MechaCar_Statistical_Analysis/blob/main/screenshots/1a.png" width=400 />
+&emsp;<img src="https://github.com/hsurisetti/MechaCar_Statistical_Analysis/blob/main/screenshots/1a.png" width=400 />
 
 Import and read in MeachCar_mpg.csv as a dataframe
- 
+
+Code :
 ```
 # 1.2 Import and read the csv file MechaCar_mpg.csv
 mecha_car <-
@@ -35,7 +37,7 @@ head(mecha_car)
 
 Output :
 
-<img src="https://github.com/hsurisetti/MechaCar_Statistical_Analysis/blob/main/screenshots/1b.png" width=400 />
+&emsp;<img src="https://github.com/hsurisetti/MechaCar_Statistical_Analysis/blob/main/screenshots/1b.png" width=400 />
 
 Perform linear regression using the lm() function. 
 - The lm() function, is passed in 6 variables and add the dataframe created, as the data parameter.
@@ -50,12 +52,12 @@ lm(mpg ~ vehicle_length + vehicle_weight + spoiler_angle + ground_clearance + AW
 
 Output :
 
-<img src="https://github.com/hsurisetti/MechaCar_Statistical_Analysis/blob/main/screenshots/1c.png" width=400 />
+&emsp;<img src="https://github.com/hsurisetti/MechaCar_Statistical_Analysis/blob/main/screenshots/1c.png" width=400 />
 
 
 Using the summary() function, the p-value and the r-squared values are determined for the linear regression model.
 
-code :
+Code :
 ```
 # 1.4 Using the summary() function, determine the p-value and the r-squared value for the linear regression model.
 summary(lm(mpg ~ vehicle_length + vehicle_weight + spoiler_angle + ground_clearance + AWD , data = mecha_car )
@@ -64,7 +66,7 @@ summary(lm(mpg ~ vehicle_length + vehicle_weight + spoiler_angle + ground_cleara
 
 Output :
 
-<img src="https://github.com/hsurisetti/MechaCar_Statistical_Analysis/blob/main/screenshots/1d.png" width=400 />
+&emsp;<img src="https://github.com/hsurisetti/MechaCar_Statistical_Analysis/blob/main/screenshots/1d.png" width=400 />
 
 
 ## Linear regression to predict MPG
@@ -107,7 +109,7 @@ read.csv(file = "Suspension_Coil.csv", check.names = F, stringsAsFactors = F)
 
 Output:
 
-<img src="https://github.com/hsurisetti/MechaCar_Statistical_Analysis/blob/main/screenshots/2a.png" width=400 />
+&emsp;<img src="https://github.com/hsurisetti/MechaCar_Statistical_Analysis/blob/main/screenshots/2a.png" width=400 />
 
 Create a total_summary dataframe using the summarize() function to get the mean, median, variance, and standard deviation of the suspension coil’s PSI column.
 
@@ -121,7 +123,7 @@ total_summary <- suspension_coil %>%
 ```
 Output:
 
-<img src="https://github.com/hsurisetti/MechaCar_Statistical_Analysis/blob/main/screenshots/2b.png" width=400 />
+&emsp;<img src="https://github.com/hsurisetti/MechaCar_Statistical_Analysis/blob/main/screenshots/2b.png" width=400 />
 
 Write an RScript that creates a total_summary dataframe using the summarize() function to get the mean, median, variance, and standard deviation of the suspension coil’s PSI column.
 
@@ -137,7 +139,7 @@ lot_summary <- suspension_coil %>%
 
 Output:
 
-<img src="https://github.com/hsurisetti/MechaCar_Statistical_Analysis/blob/main/screenshots/2c.png" width=400 />
+&emsp;<img src="https://github.com/hsurisetti/MechaCar_Statistical_Analysis/blob/main/screenshots/2c.png" width=400 />
 
 ## Summary Statistics on Suspension Coils
 
@@ -151,9 +153,9 @@ Does the current manufacturing data meet this design specification for all manuf
  - Lot 3 did not meet the design spcification and it exceeded the PSI limit.
  - Summary statistics show that Lot 3 had a PSI variance of 170.
  
-<img src="https://github.com/hsurisetti/MechaCar_Statistical_Analysis/blob/main/screenshots/2d.png" width=400 />
+&emsp;<img src="https://github.com/hsurisetti/MechaCar_Statistical_Analysis/blob/main/screenshots/2d.png" width=400 />
 
-<img src="https://github.com/hsurisetti/MechaCar_Statistical_Analysis/blob/main/screenshots/2e.png" width=400 />
+&emsp;<img src="https://github.com/hsurisetti/MechaCar_Statistical_Analysis/blob/main/screenshots/2e.png" width=400 />
 
 
 
@@ -171,7 +173,7 @@ t.test(suspension_coil$PSI, mu=1500)
 
 Output:
 
-<img src="https://github.com/hsurisetti/MechaCar_Statistical_Analysis/blob/main/screenshots/3a.png" width=400 />
+&emsp;<img src="https://github.com/hsurisetti/MechaCar_Statistical_Analysis/blob/main/screenshots/3a.png" width=400 />
 
 Write three more RScripts in your MechaCarChallenge.RScript using the t.test() function and its subset() argument to determine if the PSI for each manufacturing lot is statistically different from the population mean of 1,500 pounds per square inch.
 
@@ -194,11 +196,11 @@ t.test(lot3$PSI, mu=1500)
 
 Output
 
-<img src="https://github.com/hsurisetti/MechaCar_Statistical_Analysis/blob/main/screenshots/3b.png" width=400 />
+&emsp;<img src="https://github.com/hsurisetti/MechaCar_Statistical_Analysis/blob/main/screenshots/3b.png" width=400 />
 
-<img src="https://github.com/hsurisetti/MechaCar_Statistical_Analysis/blob/main/screenshots/3c.png" width=400 />
+&emsp;<img src="https://github.com/hsurisetti/MechaCar_Statistical_Analysis/blob/main/screenshots/3c.png" width=400 />
 
-<img src="https://github.com/hsurisetti/MechaCar_Statistical_Analysis/blob/main/screenshots/3d.png" width=400 />
+&emsp;<img src="https://github.com/hsurisetti/MechaCar_Statistical_Analysis/blob/main/screenshots/3d.png" width=400 />
 
 ## T-Tests on Suspension Coils
  Here are the Interpretation and the findings of the t-test results

@@ -1,4 +1,4 @@
-# Mechacar Statisticl Analysis
+# Mechacar Statistical Analysis
 
 ## Overview
  AutosRUs’ newest prototype, the MechaCar, is suffering from production troubles that are blocking the manufacturing team’s progress. Its upper management has called on Jeremy and the data analytics team to review the production data for insights that may help the manufacturing team.
@@ -139,7 +139,7 @@ Output:
 
 <img src="https://github.com/hsurisetti/MechaCar_Statistical_Analysis/blob/main/screenshots/2c.png" width=400 />
 
-## write a short summary using screenshots from your total_summary and lot_summary dataframes, and address the following question:
+## Summary Statistics on Suspension Coils
 
 The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch (PSI).
 
@@ -159,7 +159,7 @@ Does the current manufacturing data meet this design specification for all manuf
 
 ## Deliverable 3
 
-- write an RScript using the t.test() function to determine if the PSI across all manufacturing lots is statistically different from the population mean of 1,500 pounds per square inch.
+Write an RScript using the t.test() function to determine if the PSI across all manufacturing lots is statistically different from the population mean of 1,500 pounds per square inch.
 
 code :
 
@@ -173,7 +173,7 @@ Output:
 
 <img src="https://github.com/hsurisetti/MechaCar_Statistical_Analysis/blob/main/screenshots/3a.png" width=400 />
 
-- Write three more RScripts in your MechaCarChallenge.RScript using the t.test() function and its subset() argument to determine if the PSI for each manufacturing lot is statistically different from the population mean of 1,500 pounds per square inch.
+Write three more RScripts in your MechaCarChallenge.RScript using the t.test() function and its subset() argument to determine if the PSI for each manufacturing lot is statistically different from the population mean of 1,500 pounds per square inch.
 
 
 Code:
@@ -203,7 +203,7 @@ Output
 ## T-Tests on Suspension Coils
  Here are the Interpretation and the findings of the t-test results
  
-- Determine if the suspension coil's pound-per-inch results are statistically different 
+Determine if the suspension coil's pound-per-inch results are statistically different 
 from the mean population results of 1,500 pounds per inch.
 
    * Collectively, the p-value of the suspension coil's PSI is 0.06028, which is 

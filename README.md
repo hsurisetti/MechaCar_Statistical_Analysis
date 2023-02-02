@@ -221,7 +221,15 @@ from the mean population results of 1,500 pounds per inch.
 
 ## Study Design: MechaCar vs Competition
   Write a short description of a statistical study that can quantify how the MechaCar performs against the competition. In your study design, think critically about what metrics would be of interest to a consumer: for a few examples, cost, city or highway fuel efficiency, horse power, maintenance cost, or safety rating.
-  
+
+  &emsp;<img src="https://github.com/hsurisetti/MechaCar_Statistical_Analysis/blob/main/screenshots/4a.png" width=400 />
+
+  &emsp;<img src="https://github.com/hsurisetti/MechaCar_Statistical_Analysis/blob/main/screenshots/4b.png" width=300 />
+
+  &emsp;<img src="https://github.com/hsurisetti/MechaCar_Statistical_Analysis/blob/main/screenshots/4c.png" width=400 />
+
+ &emsp;<img src="https://github.com/hsurisetti/MechaCar_Statistical_Analysis/blob/main/screenshots/4d.png" width=400 />
+
  * What metric or metrics are you going to test?
     
     - Horsepower is a metric that can be used to compare the MechaCar protoptype vehicle to other comparable vehicles on the market.

@@ -147,7 +147,7 @@ The design specifications for the MechaCar suspension coils dictate that the var
 
 Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not?
 
- - Collectively, the manufacturing lots had a PSI variance of 62.3, which meets the design specifications.
+ - Overall, the manufacturing lots had a PSI variance of 62.3, which meets the design specifications.
  - However, when grouped by manufacturing lots, lots1 and 2 had design specification well below the PSI limit.
  - Lot 1 had a PSI variance of 0.980 and lot2 had a PSI variance of 7.47.
  - Lot 3 did not meet the design spcification and it exceeded the PSI limit.
@@ -208,11 +208,11 @@ Output
 Determine if the suspension coil's pound-per-inch results are statistically different 
 from the mean population results of 1,500 pounds per inch.
 
-   * Collectively, the p-value of the suspension coil's PSI is 0.06028, which is 
-   above the significance level of 0.05% , which demonstrates that it is not statistically different( or statistically similar) from the mean population PSI results.
+   * Overall, the p-value of the suspension coil's PSI is 0.06028, which is 
+   above the significance level of 0.05% , which indicates that it is not statistically different from the mean population PSI results.
    * However , when grouped by manufacturing lots,lot 1 had a p-value of 1 and
    lot 2 had a p-value of 0.6072, which is above the significance level as well. 
-   It demonstrates that they are not statistically different from the mean population PSI results.
+   It shows that they are not statistically different from the mean population PSI results.
    * Lot 3 had a p-value of 0.04168 , which is below the significance level.
    * Among the three manufacturing lots, the suspension coil's PSI os lot3 is the 
    only one that is statistically different from the mean population PSI results.
@@ -234,15 +234,14 @@ from the mean population results of 1,500 pounds per inch.
 
  * What metric or metrics are you going to test?
     
-    - Horsepower is a metric that can be used to compare the MechaCar protoptype vehicle to other comparable vehicles on the market.
+    - Horsepower is one of the metric that could be used to compare the MechaCar protoptype vehicle to other comparable vehicles on the market.
     - Although the MechaCar dataset did not include this metric, the mtcars dataset does.
-    I used a single linear regression model to determine whether there is a correlation between horsepower (hp) and the miles per gallon (mpg).
-    - It tested the following hypotheseis
+    I chose a single linear regression model to determine whether there is a correlation between horsepower (hp) and the miles per gallon (mpg).
     
  * What is the null hypothesis or alternative hypothesis?
  
-   - H0: There is a correlation between hp and mpg
-   - Ha: There is no correlation between hp nd mpg.
+   - Null Hypothesis : There is a correlation between hp and mpg
+   - Alternative Hypothesis: There is no correlation between hp nd mpg.
    
  * What statistical test would you use to test the hypothesis? And why?
  
@@ -251,5 +250,5 @@ from the mean population results of 1,500 pounds per inch.
   
   * What data is needed to run the statistical test?
   
-    - Based on my single linear regression model and one sample t-test, there is evidence to suggest that horsepower would be a worth data collection point to include in the MechaCar dataset for further studies.
+    - Based on my single linear regression model and one sample t-test, there is evidence to suggest that horsepower would be a worthy data to be included in the MechaCar dataset.
 
